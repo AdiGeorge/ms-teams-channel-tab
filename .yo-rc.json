@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "AdiGeorge"
+    },
+    "libraryName": "channelTab",
+    "generator-version": "4.0.1"
+  }
+}
