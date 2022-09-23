@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>channel tab Tab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- inject:css -->
+  <!-- endinject -->
+  
+</head>
+
+<body>
+  <div id='app'>
+    <span id="user"></span>
+  </div>
+  <!-- inject:js -->
+  <!-- endinject -->
+  <script type='text/javascript'>
+    import {app} from 'https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js';
+    const contextPromise = app.getContext();
+    contextPromise.
+        then((context) => {
+            let userId = document.getElementById('user');
+            userId.innerHTML = context.user.userPrincipalName;
+        }).
+        catch((error) => {/*Unsuccessful operation*/});
+    channelTab.render(channelTab.ChannelTabTab, document.getElementById('app'), {});
+  </script>
+</body>
+
+</html>

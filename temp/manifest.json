@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "c947455b-10d1-4c6d-81b0-3da489ad2cf0",
+  "version": "0.0.1",
+  "packageName": "channeltab",
+  "developer": {
+    "name": "AdiGeorge",
+    "websiteUrl": "https://adi.ngrok.io",
+    "privacyUrl": "https://adi.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://adi.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "channel tab",
+    "full": "channel tab"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://adi.ngrok.io/channelTabTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "adi.ngrok.io"
+  ],
+  "showLoadingIndicator": false
+}
